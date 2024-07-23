@@ -1,0 +1,15 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#sidebar.nav-link{
+    color: white;
+
+}
+#sidebar .nav-item {
+    border-bottom: 1px solid #e8e0e0; /* Optional: Add a border between items */
+    list-style-type: none; /* Đặt kiểu danh sách là dấu chấm */
+    background-color: black;
+    color: white;
+}
