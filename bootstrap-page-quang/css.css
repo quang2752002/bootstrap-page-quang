@@ -57,14 +57,14 @@ a:focus {
 
 .wrapper {
     display: flex;
-    width: 100%;
+    width: 90%;
     align-items: stretch;
 }
 
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #030935;
+    background: #2a2f33;
     color: #fff;
     transition: all 0.3s;
 }
@@ -97,7 +97,7 @@ a:focus {
 
 #sidebar ul li a:hover {
     color: #f4f4f7;
-    background: #075ed1;
+    background:   #fb474a;
 }
 
 #sidebar ul li.active>a,
@@ -173,19 +173,18 @@ a.article:hover {
     height: auto;
     width: 500px;
 }
-.overlay-text {
+.text-overlay {
     position: absolute;
-    top: 5px; /* Adjust as needed */
-    right: 5px; /* Adjust as needed */
+    bottom: 0;
+    left: 0;
+    width: 100%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 5px 10px;
-    border-radius: 5px;
-    width: 45px;
-    height: 20px;
-    font-size: 10px;
-    background-color: rgb(58, 123, 236);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 60%, transparent 100%) !important;
+    padding: 10px !important;
+    box-sizing: border-box !important;
 }
+
+
 .image-container {
     position: relative;
     display: inline-block;
@@ -200,18 +199,32 @@ a.article:hover {
     bottom: 0;
     left: 0;
     width: 100%;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
+    
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
     padding: 10px;
     box-sizing: border-box;
 }
 
+
 .eye-icon {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0px;    
+    right: -5px;
     width: 40px;
     height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+}
+.eye-icons {
+    position: absolute;
+     
+    right: -3px;
+    top: 100px;
+    width: 40px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
