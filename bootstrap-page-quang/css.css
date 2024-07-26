@@ -74,12 +74,12 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
-    padding: 0px;
+    padding: 0px !important;;
     background: #6d7fcc;
 }
 
 #sidebar ul.components {
-    padding: 0px 0;
+    padding: 0px 0 !important;;
 }
 
 #sidebar ul p {
@@ -91,13 +91,18 @@ a:focus {
     padding: 10px;
     font-size: 1.1em;
     display: block;
-    
+    padding-left: 20px;
 
+}
+
+.menu>li>a{
+    padding: 0 !important;
 }
 
 #sidebar ul li a:hover {
     color: #f4f4f7;
-    background:   #fb474a;
+    background:#fb474a;
+    
     
 }
 
@@ -199,7 +204,7 @@ a.article:hover {
     bottom: 0;
     left: 0;
     width: 100%;
-    
+    font-size: 10px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
     padding: 10px;
     box-sizing: border-box;
